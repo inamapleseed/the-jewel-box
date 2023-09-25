@@ -1,0 +1,2251 @@
+$b: #000
+$w: #fff
+$dbrown: #6E4C4E
+$lbrown: #8C7975
+$flesh: #FFF2EA
+$grey: #808080
+$print: "OPTIMA"
+
+*
+	font-family: "Lato", sans-serif
+	color: $dbrown
+	&::selection
+		background: $lbrown
+
+@font-face
+	font-family: "OPTIMA"
+	src: url("../fonts/OPTIMA.ttf")
+
+input
+	&::-ms-clear,
+	&::-ms-reveal
+		display: none !important
+
+input[type=date]
+	cursor: pointer
+
+select, option
+	cursor: pointer
+
+*
+	outline: none !important
+	&:focus
+		outline: none !important
+
+a:not(.sticker)
+	&:hover
+		color: $lbrown
+
+h2
+	margin-top: 40px !important
+
+.breadcrumb
+	text-align: center
+
+.cart-dorpdown-items
+	img
+		height: auto !important
+
+.cart-dorpdown-footer
+	a
+		border-color: $dbrown
+		color: $b !important
+		font-weight: 500 !important
+		&:hover
+			color: $w
+
+.swal2-confirm
+	border-color: $dbrown !important
+	background: $dbrown !important
+
+.checkout-success .line-4 a
+	&:hover 
+		color: $dbrown !important
+
+.btn-primary, #reorder_order, #quickcheckout-back, .account-password .btn-default, .btn-default:not(.btn-number, #button-search, .product-button > .btn-default)
+	min-width: 160px !important
+	padding: 8px 13px
+	font-weight: 400
+	font-size: 15px
+	font-family: $print
+	border: 1px solid $dbrown !important
+	color: $dbrown
+	background: transparent
+	letter-spacing: 1px
+
+	&:hover, &:active, &:focus
+		opacity: .6
+		color: $dbrown
+		background: transparent !important
+
+.btn-number, #button-search, .product-button > .btn-default
+	// background: $dbrown
+
+.quickcheckout-cart
+	.input-group-btn
+		button
+			padding: 2px 12px !important
+
+		.button-update
+			min-width: 0 !important
+
+#filter_group_tigger_open
+	padding: 6px 12px
+	border: 1px solid $b
+	min-width: 0 !important
+	font-weight: 500
+
+#button-coupon, #button-login
+	padding: 0 5px !important
+	min-width: 5em !important
+
+.btn-number
+	background: #ccc !important
+	span
+		color: $w !important
+	&:hover
+		background: #999 !important
+		span
+			color: $w !important
+
+.btn-mi
+	min-width: 4em !important
+	padding: 4px 6px 0
+
+.glyphicon-minus
+	&:before
+		content: '-'
+		display: inline-block
+
+.glyphicon-plus
+	&:before
+		content: '+'
+		display: inline-block
+
+.account-container
+	a
+		&:hover
+			border-color: $dbrown !important
+			h3, span:before, p
+				color: $dbrown !important
+
+.cart-dorpdown-item-charges
+	max-width: 50%
+
+.alert
+	.alert-danger, .alert-success
+		margin-top: 3%
+
+#content
+	margin-bottom: 2em
+	line-height: 1.5em
+
+#mobileNav
+	i
+		color: $dbrown
+
+#sidr
+	.cd-accordion-menu
+		li
+			label
+				display: none
+			label ~ ul
+				display: none !important
+
+	a
+		color: $b
+		&:hover
+			font-weight: bold
+
+.account-forgotten
+	form
+		fieldset
+			padding-top: 3%
+
+.account-order
+	.modal-dialog
+		.modal-body
+			ul
+				margin: auto
+				width: auto
+				li
+					a
+						background: $dbrown
+						// color: $b
+						border: 1px solid $dbrown
+						transition: .3s ease
+						.badge
+							color: $dbrown
+				&:hover
+					a
+						background: $w
+						color: $dbrown
+			#reorder_order
+				width: 170px
+				margin: 0 auto
+
+.information-contact-success
+	#content
+		text-align: center
+		.buttons
+			margin-top: 4em !important
+
+.pagination-container
+	text-align: center
+
+.pagination
+	li
+		a, span
+			border: none !important
+			color: $w
+			font-weight: bold
+			display: flex
+			align-items: center
+			justify-content: center	
+			margin: 0 .5em
+		a
+			background: transparent
+
+		&.active, &:hover
+			span, a:not(.arrow)
+				color: $w !important
+				background: $lbrown !important
+
+		&.arrow
+			&:hover
+				background: transparent !important
+				color: $dbrown !important
+
+#side-price
+	.ui-slider-range, .ui-slider-handle
+		background: #8C7975 !important
+
+	#slider-price
+		background: $b !important
+
+	.ui-slider-handle
+		width: 17px !important
+		height: 17px !important
+		border-radius: 50% !important
+
+.container
+	width: 85%
+
+.information-contact
+	#content
+		margin-bottom: 0
+	.mon-row
+
+		.col-sm-12
+			h3
+				text-transform: uppercase
+				font-weight: 500
+				margin-bottom: 25px
+
+			&.details
+				h4
+					text-transform: uppercase
+					font-weight: 600
+
+				a, address
+					color: $grey
+					font-size: 15px
+
+					&:hover
+						color: $dbrown !important
+
+				.contact
+					text-overflow: ellipsis
+					overflow: hidden
+					white-space: nowrap
+
+			form
+				textarea, input[type=text], input[type=tel]
+					border-color: transparent transparent $dbrown transparent
+					border-bottom: 1px solid 
+					box-shadow: none
+					padding-left: 5px
+					&::placeholder
+						font-size: 20px !important
+						font-weight: 500
+						color: $dbrown
+						letter-spacing: 1px
+						font-family: $print
+
+				.contact-body
+					> .form-group
+						@media (min-width: 991px)
+							&:nth-child(2n)
+								margin-left: 15px !important
+								margin-right: 0 !important
+
+							&:nth-child(2n + 1)
+								margin-right: 15px !important
+								margin-left: 0 !important
+
+				.contact-footer
+					margin-top: 20px
+					display: flex
+					align-items: center
+					justify-content: space-between
+					flex-wrap: wrap
+					@media (max-width: 768px)
+						justify-content: center
+						// margin-bottom: 40px
+
+					#google_recaptcha
+						margin-bottom: 0
+
+@media (max-width: 1100px)
+	.container
+		min-width: 95% !important
+		width: 95% !important
+
+footer
+	.footer-bottom
+		text-align: center
+		
+		*
+			font-weight: 600
+			color: $dbrown
+			font-size: 15px
+			line-height: 2em
+			margin-bottom: 0
+
+	.footer-upper-contet
+		text-align: center
+		border-top: 1px solid $dbrown
+		padding-top: 55px
+		padding-bottom: 50px
+
+		.footer-contact-links
+			&.fcl1
+				flex: auto !important
+
+		@media (max-width: 991px)
+			.footer-contact-links
+				&.fcl1
+					flex: initial !important
+
+			.footer-contact-info
+				flex: 1
+
+		a, *:not(h5)
+			font-weight: 600
+			color: $dbrown
+			font-size: 14px
+			line-height: 2em
+
+		.footer-contact-info
+			@media (min-width: 1100px)
+				> *
+					width: 80%
+					margin: 0 auto
+
+			@media (min-width: 768px) and (max-width: 1100px)
+				> *
+					width: 85%
+					margin: 0 auto
+
+		.details
+			overflow: hidden
+			text-overflow: ellipsis
+			white-space: normal
+			address
+				margin-bottom: 0
+
+		.footer-social-icons
+			img
+				max-width: 25px
+			a
+				width: calc((100% / 4) - 25px)
+				margin: 0 10.5px 10px
+				text-align: center
+
+header
+	.container
+		width: 95% !important
+
+	> .container
+		padding: 13px 0
+
+	.header-container
+		padding: 1px 0
+
+		@media (max-width: 991px)
+			grid-template-columns: 1fr 1fr 1fr
+			.header-links
+				a
+					text-align: left
+
+			.header-top
+				margin-right: 10px
+
+	.header-logo
+		img
+			width: 175px
+
+		@media (max-width: 1300px) and (min-width: 991px)
+			img
+				max-width: 100px !important
+
+		@media (max-width: 768px)
+			> .container
+				padding: 8px 0
+
+			img
+				max-width: 100px !important
+
+	.nav-img
+		height: 16px
+
+	#main-menu
+		padding-left: 35px
+		.sub-arrow
+			border-color: $dbrown transparent transparent
+		li
+			a, span
+				text-transform: uppercase
+				font-size: 15px
+				font-weight: 600
+
+		@media (max-width: 1200px)
+			display: flex
+			justify-content: center
+			flex-wrap: wrap
+			a
+				padding-right: 20px !important
+
+	#cart
+		#cart_dropdown_icon
+			align-items: center
+
+			.count
+				margin-left: 5px
+				font-size: 12px
+				font-weight: bold
+				position: relative
+
+	.search_container, #enquiry, #account, #cart_dropdown_icon
+		img
+			max-width: 20px
+
+.header-social-icons
+	position: fixed
+	z-index: 5
+	right: 1%
+	bottom: 10%
+	width: 50px
+	display: flex !important
+	flex-direction: column-reverse
+	img
+		margin-top: 10px
+
+@media (max-width: 768px)
+	.header-social-icons
+		transform: scale(0.8)
+		transform-origin: bottom	
+
+	#ToTop
+		transform: scale(.8)
+
+.iid-4
+	#content
+		margin-bottom: 0
+
+		> h2
+			display: none
+
+.about
+	padding: 0
+
+	.title-text
+		text-align: center
+
+		p
+			color: $grey
+			margin: 0 auto 20px
+			line-height: 2em
+			font-weight: 600
+			@media (min-width: 768px)
+				width: 75%
+
+	.about-inner
+		margin-top: calc(50px + (100 - 50) * (100vw - 320px) / (1920 - 320))
+
+		.inner
+			display: flex
+			justify-content: space-between
+			align-items: center
+			margin-bottom: calc(30px + (80 - 30) * (100vw - 320px) / (1920 - 320))
+			overflow: hidden
+
+			@media (min-width: 1200px)
+				height: 415px
+
+			@media (max-width: 1200px) and (min-width: 991px)
+				height: 400px
+
+			@media (min-width: 991px)
+				.images
+					width: 50%
+
+				.text
+					width: 45%
+
+					> *
+						width: 85%
+
+				&.even
+					.images
+						order: 2
+
+					.text
+							order: 1
+
+				&.odd
+					.text
+						> *
+							margin-left: auto
+
+			@media (max-width: 991px) and (min-width: 768px)
+				flex-direction: column
+
+				.images, .text
+					width: 75%
+					img
+						margin: 0 auto 20px
+
+			@media (max-width: 768px)
+				flex-direction: column
+				.images, .text
+					// width: 90%
+					img
+						margin: 0 auto 20px
+
+			.images
+				img
+					width: 100%
+
+			.text
+				height: 75%
+				overflow: auto
+				margin: auto 0
+				display: flex
+				flex-direction: column
+				justify-content: center
+
+				h3
+					font-size: calc(30px + (55 - 30) * (100vw - 320px) / (1920 - 320))
+					font-weight: 500
+					margin-bottom: 30px
+					text-transform: uppercase
+
+				p
+					line-height: 2em
+					margin-bottom: 15px
+					color: $grey
+					font-weight: 600
+
+.custom
+	padding-bottom: 0
+
+.testimonial-con
+	h2
+		margin-top: 0 !important
+		margin-bottom: 50px !important
+
+	.slick-track
+		display: flex !important
+
+	.slick-slide
+		text-align: center
+		height: inherit !important
+		> div
+			height: 100% !important
+
+		img
+			margin: 0 auto 20px
+			max-width: 100%
+			max-height: 100px
+
+		.text-con
+			padding: 0 20px
+			position: relative
+			display: flex
+			align-items: center
+			justify-content: center
+			flex-direction: column
+
+			h3
+				margin-bottom: 20px
+				font-size: 35px
+				text-transform: uppercase
+				min-height: 77px
+
+			*
+				font-family: $print
+
+			.p
+				margin-bottom: 20px
+				line-height: 2em
+				*
+					font-size: 18px
+
+			h4
+				font-weight: bold
+				font-size: 19px
+				margin-top: auto
+
+			.bg
+				background: $flesh
+				height: 100%
+				position: absolute
+				top: 0
+				bottom: 0
+				z-index: -1
+				@media (min-width: 768px)
+					width: 70%
+
+				@media (max-width: 768px)
+					width: 95%
+
+	.der-btn
+		text-align: center
+		display: flex
+		justify-content: center
+		width: 100%
+		margin-top: 50px
+		a
+			min-width: 200px !important
+
+.slick-dots
+	display: flex !important
+	margin-top: 50px
+	justify-content: center
+	padding-left: 0
+	overflow: hidden
+
+	li
+		list-style: none
+
+		&.slick-active
+			button
+				border: 4px solid #DBD4D3 !important
+				background: #8D7875 !important
+
+		button
+			border: 4px solid #fff !important
+			width: 15.5px !important
+			height: 15px !important
+			transition: 0.3s ease
+			background: #C4BCB9 !important
+			color: transparent
+			border-radius: 50%
+			padding: 0 !important
+			margin: 0 6px
+
+			&:before
+				display: none
+
+.no-any
+	border: none
+	font-weight: 500
+	font-size: 18px
+	color: $dbrown
+	font-family: $print
+
+.news-ncategory
+	.news_archive, .news_latest
+		padding: 0
+
+	.in-home
+		display: none
+
+	.news-ctgr
+		border: 1px solid $grey
+		padding: 10px 15px
+
+	.custom-select
+		margin: 0px
+		height: 52px
+		border-width: 1px
+		border-style: solid
+		border-color: #dadada
+		box-shadow: none
+		font-size: 16px !important
+		color: #000
+		-webkit-appearance: none
+		-webkit-border-radius: 0px
+		-moz-appearance: none
+		appearance: none
+		background: url(../../../../../../image/catalog/dropdown.png) no-repeat 85% 50% #fff
+		background-size: 11px 6px
+		border-radius: 0px !important
+		padding: 5px 20px !important
+		height: auto !important
+		padding-right: 40px !important
+		color: $grey
+
+	.news-list-wrap
+		.news-post
+			@media (min-width: 991px)
+				width: calc((100% / 3) - 20px)
+
+				&:nth-child(3n + 1)
+					margin: 25px 20px 25px 0
+
+				&:nth-child(3n)
+					margin: 25px 0px 25px 20px
+
+				&:nth-child(3n + 2)
+					margin: 25px 10px
+
+			@media (max-width: 991px) and (min-width: 768px)
+				width: calc((100% / 2) - 15px)
+
+				&:nth-child(2n)
+					margin: 25px 0px 25px 15px
+
+				&:nth-child(2n + 1)
+					margin: 25px 15px 25px 0
+
+			@media (max-width: 768px) and (min-width: 414px)
+				width: calc((100% / 2) - 10px)
+
+				&:nth-child(2n)
+					margin: 25px 0px 25px 10px
+
+				&:nth-child(2n + 1)
+					margin: 25px 10px 25px 0
+
+			@media (max-width: 414px)
+				width: 100%
+				margin-bottom: 20px
+
+			.hover-overlay
+				margin-bottom: 20px
+
+			.article-name
+				a
+					text-transform: uppercase
+					font-size: 19px
+					color: $dbrown
+					letter-spacing: 1px
+					display: -webkit-box
+					-webkit-line-clamp: 2
+					-webkit-box-orient: vertical
+					overflow: hidden
+
+			.article-description
+				color: $grey
+				line-height: 2em
+				font-weight: 600
+
+	#news_latest
+		margin-bottom: 30px
+
+		.slick-track
+			display: flex
+
+			.slick-slide
+				height: inherit
+
+		.artb
+			display: flex
+			flex-direction: row-reverse
+
+			@media (min-width: 1200px)
+				max-height: 500px
+
+			@media (max-width: 1200px) and (min-width: 991px)
+				max-height: 350px
+
+			@media (min-width: 991px)
+				.info
+					> div
+						width: 80%
+
+				.img_container, .info
+					width: 50%
+
+				img
+					height: 100%
+
+			@media (max-width: 991px)
+				flex-wrap: wrap
+
+				.img_container
+					max-height: 200px
+					width: 100%
+					img
+						// max-width: 100%
+						height: 100%
+
+				.info
+					padding: 20px 0
+					> div
+						width: 90%
+
+			.info
+				display: flex
+				flex-direction: column
+				justify-content: center
+				> div
+					margin: 25px auto
+
+				.description
+					margin: 0 auto
+
+				.name
+					margin-bottom: 20px
+					a
+						font-size: calc(20px + (40 - 20) * (100vw - 320px) / (1920 - 320))
+						line-height: 1.1em
+						display: -webkit-box
+						-webkit-box-orient: vertical
+						-webkit-line-clamp: 3
+						overflow: hidden
+
+				.description
+					margin-bottom: 10px
+					color: $grey
+					line-height: 2em
+					display: -webkit-box !important
+					-webkit-line-clamp: 5
+					-webkit-box-orient: vertical
+					overflow: hidden
+
+				.date
+					display: none
+
+	h2
+		@media (max-width: 991px) and (min-width: 768px)
+			margin-bottom: calc(80px + (150 - 80) * (100vw - 320px) / (1920 - 320)) !important
+
+		@media (max-width: 500px)
+			margin-top: 0 !important
+
+.img_container
+	overflow: hidden
+	display: flex
+	align-items: center
+	justify-content: center
+	position: relative
+
+	.bg
+		position: absolute
+		width: 100%
+		z-index: -1
+		filter: blur(8px)
+		img
+			width: 100%
+
+.artblock, .artb
+	.name
+		a
+			color: $dbrown
+			text-transform: uppercase
+			letter-spacing: 1px
+
+.news-article
+	#column-right
+		h3
+			text-transform: uppercase
+			font-size: calc(20px + (30 - 20) * (100vw - 320px) / (1920 - 320))
+
+		.artblock
+			.bg
+				display: none
+
+			.info
+				display: flex
+				flex-direction: column
+				justify-content: space-between
+
+				.name
+					display: -webkit-box !important
+					-webkit-line-clamp: 2
+					-webkit-box-orient: vertical
+					overflow: hidden
+					a
+						font-size: 15px !important
+
+				.date
+					color: $grey
+
+			.img_container
+				height: 70px
+				overflow: hidden
+
+				img
+					height: 100%
+					max-width: initial
+					min-width: 100%
+
+	.breadcrumb
+		li
+			&:last-of-type
+				max-width: 150px
+				overflow: hidden
+				text-overflow: ellipsis
+				transform: translate(4px, 7px)
+
+	#content
+		.title
+			*
+				text-transform: uppercase
+				font-size: calc(22px + (28 - 22) * (100vw - 320px) / (1920 - 320))
+
+		.share
+			padding-bottom: 18px
+			padding-top: 10px
+			*
+				color: $dbrown
+				font-weight: 600
+				font-size: 16px
+
+		.date
+			padding-bottom: 20px
+
+		.description
+			line-height: 2em
+			p
+				margin-bottom: 20px
+				color: $grey
+
+		.navigation
+			display: flex
+			justify-content: space-between
+
+	@media (max-width: 768px)
+		h2
+			margin-top: 0 !important
+
+.iid-7
+	#content
+		margin-bottom: 0
+
+	header
+		> .container
+			width: 95% !important
+
+	.container
+		width: 100% !important
+
+	.bespoke-container-2
+		@media (min-width: 768px)
+			width: 85%
+			margin: 0 auto 80px
+
+		.top
+			display: flex
+			@media (min-width: 991px)
+				.image
+					width: 55%
+
+				.texts
+					width: 45%
+					h3
+						width: 70%
+					p
+						width: 85%
+
+			@media (max-width: 991px)
+				flex-wrap: wrap
+				flex-direction: column
+				.texts
+					order: 2
+					margin-top: 15px
+					h3
+						width: 85%
+
+				.image
+					order: 1
+
+			.image
+				img
+					width: 100%
+
+			.texts
+				display: flex
+				flex-direction: column
+				justify-content: center
+				h3
+					text-transform: uppercase
+					font-size: calc(22px + (45 - 22) * (100vw - 320px) / (1920 - 320))
+					margin-bottom: 20px
+
+				p
+					line-height: 2em
+					color: $grey
+					font-size: 16px
+
+	.custom2
+		padding: 0 !important
+
+		.container
+			width: 100%
+			padding: 0
+
+		.steps-container
+			padding: 50px 0
+
+			.step-inner
+				display: grid
+				grid-template-columns: 1fr 1fr 1fr
+				grid-template-rows: .1fr .5fr .1fr 1fr
+
+				.center-image
+					grid-column: 2/3
+					grid-row: 1/3
+					text-align: center
+					img
+						max-width: calc(300px + (470 - 300) * (100vw - 991px) / (1920 - 991))
+
+				.steps
+					display: flex
+					align-items: center
+					justify-content: center
+					margin-bottom: calc(50px + (95 - 50) * (100vw - 991px) / (1920 - 991))
+
+					img
+						width: calc(110px + (140 - 110) * (100vw - 991px) / (1920 - 991))
+						border-radius: 50%
+
+					.texts
+						width: 60%
+						margin-left: 16px
+						position: relative
+
+						.underlay
+							position: absolute
+							z-index: -1
+							color: #F6F4F5
+							font-size: calc(120px + (240 - 120) * (100vw - 991px) / (1920 - 991))
+							top: -20px
+							bottom: 0
+							display: flex
+							align-items: center
+							justify-content: center
+							width: 100%
+							height: auto
+
+						.p
+							display: -webkit-box
+							-webkit-line-clamp: 3
+							overflow: hidden
+							-webkit-box-orient: vertical
+							p
+								line-height: 2em
+
+						h4
+							text-transform: uppercase
+							font-size: 21px
+							margin-bottom: 0
+
+					&.step-1, &.step-5
+						transform: translateX(calc(40px + (100 - 40) * (100vw - 991px) / (1920 - 991)))
+
+					&.step-2, &.step-6
+						transform: translateX(calc(-40px + (-100 - -40) * (100vw - 991px) / (1920 - 991)))
+
+					&.step-5, &.step-6
+						margin-bottom: calc(10px + (60 - 10) * (100vw - 991px) / (1920 - 991))
+
+					&.step-6
+						grid-column: 3/4
+
+					&.step-7
+						grid-row: 4/5
+						grid-column: 2/3
+
+			@media (min-width: 1400px)
+
+			@media (max-width: 1400px) and (min-width: 991px)
+				grid-template-rows: 1fr 1fr 1fr 1fr
+
+			@media (max-width: 1100px)
+				.steps
+					transform: translateX(0) !important
+
+			@media (max-width: 1100px) and (min-width: 991px)
+				.steps
+					&.step-7
+						grid-row: 3/5 !important
+
+			@media (min-width: 991px)
+				.step-7
+					justify-content: flex-start
+
+			@media (max-width: 991px)
+				.step-inner
+					display: flex
+					flex-wrap: wrap
+					align-items: center
+					justify-content: center
+
+					.steps
+						margin-bottom: 20px !important
+						width: 100%
+
+						&.step-1
+							margin-top: 20px
+
+						.underlay
+							justify-content: flex-end !important
+							font-size: 100px !important
+
+			@media (max-width: 768px)
+				.steps
+					flex-direction: column
+
+					.texts
+						width: 100% !important
+						margin-top: 15px !important
+						margin-left: 0 !important
+						text-align: center
+
+						.p
+							display: block !important
+
+		.btm-texts
+			.inner
+				margin: auto
+				display: flex
+				padding: 70px 0 50px
+				flex-wrap: wrap
+
+				@media (min-width: 991px)
+					width: 85%
+
+				@media (min-width: 768px)
+					> div
+						width: calc(100%/3)
+
+				@media (max-width: 991px) and (min-width: 769px)
+					width: 95%
+
+				> div
+					text-align: center
+
+					> *
+						width: 90%
+						margin: 0 auto
+
+					h4
+						font-size: 22px
+						margin-bottom: 20px
+
+					p
+						color: $grey
+						line-height: 2em
+
+	.bespoke-container-2, .steps-container
+		@media (max-width: 768px)
+			width: 90%
+			margin: 0 auto
+
+aside
+	#filter-groups
+		@media (min-width: 768px)
+			width: 85%
+
+			.list-group-item
+				padding-left: 0
+
+		.item-header
+			font-weight: 500
+			font-size: calc(26px + (32 - 26) * (100vw - 320px) / (1920 - 320))
+			text-transform: uppercase
+
+		#side-categories
+			.side-categories-level-1
+				margin-bottom: 8px
+
+				.item
+					&.level-1
+						a
+							font-weight: 500
+							font-size: 16px
+
+						&.active
+							a
+								color: $lbrown
+
+							.toggle
+								.plus
+									color: transparent
+									.minus
+										opacity: 1
+										color: $lbrown
+
+					.toggle
+						.plus
+							position: relative
+							font-weight: 500
+							font-size: 18px
+							.minus
+								font-size: 25px
+								opacity: 0
+								position: absolute
+								right: 0
+								left: 0
+
+					a
+						color: $dbrown
+						font-weight: 500
+						padding-left: 0
+						text-transform: uppercase
+
+				.sub
+					padding-left: 15px
+					.item
+						&.level-2
+							&.active, &:hover
+								a
+									color: $lbrown
+
+		#side-manufacturer
+			.inner
+				display: -webkit-box
+				-webkit-box-orient: vertical
+				-webkit-line-clamp: 4
+				overflow: auto
+
+.product-gutter
+	.category
+		text-align: left
+		text-transform: uppercase
+		color: $grey
+		padding-top: 20px
+
+	.product-button
+		display: flex
+		flex-direction: column
+		.enq
+			margin-bottom: 10px
+
+	.product-image-block
+		background: $w
+		.product-image
+			img
+				transition: .3s ease
+
+	.product-name
+		text-align: left
+		a
+			text-transform: uppercase
+			color: $dbrown
+			font-size: calc(17px + (21 - 17) * (100vw - 320px) / (1920 - 320))
+
+	.product-details
+		text-align: left
+
+	.price
+		.price-new
+			font-size: calc(18px + (21 - 18) * (100vw - 320px) / (1920 - 320))
+
+		.sale
+			color: #BF0608
+
+	&:hover
+		.product-image
+			img
+				opacity: .1
+
+		a, p, .product-details
+			opacity: .6
+
+.sorts
+	.flex-wrap
+		justify-content: flex-end
+
+		@media (min-width: 768px)
+			.col-md-3
+				width: 185px
+
+		@media (max-width: 768px)
+			border-bottom: 1px solid #ccc
+
+	.custom-select
+		margin: 0px
+		height: 52px
+		width: 100%
+		border-width: 1px
+		border-style: solid
+		border-color: #dadada
+		box-shadow: none
+		// font-size: 16px !important
+		color: #000
+		-webkit-appearance: none
+		-webkit-border-radius: 0px
+		-moz-appearance: none
+		appearance: none
+		background: url(../../../../../../image/catalog/dropdown.png) no-repeat 85% 50% #fff
+		background-size: 11px 6px
+		border-radius: 0px !important
+		padding: 9px 15px !important
+		height: auto !important
+		padding-right: 40px
+		@media (max-width: 768px)
+			background: $w
+			padding-right: 0
+			font-size: 14px
+
+.product-product, .product-product2
+	.col-lg-6
+		@media (min-width: 991px)
+			&:first-of-type
+				width: 55%
+
+			&:last-of-type
+				width: 45%
+
+		h4
+			text-transform: uppercase
+			font-size: 14px
+			color: grey
+			letter-spacing: 1px
+			margin-bottom: 5px
+
+		h3
+			text-transform: uppercase
+			font-size: calc(20px + (28 - 20) * (100vw - 320px) / (1920 - 320))
+
+		.price-wrapper
+			display: flex
+			align-items: baseline
+			padding: 10px 0
+			.sale
+				color: #BF0608
+				font-size: calc(22px + (28 - 22) * (100vw - 320px) / (1920 - 320))
+
+			.dc
+				font-size: 22px
+				color: #ccc
+				padding-left: 10px
+
+			.product-price
+				font-size: calc(22px + (28 - 22) * (100vw - 320px) / (1920 - 320))
+
+		#product
+			.form-group
+				display: flex
+				flex-direction: column
+
+				.input-group
+					height: 50px
+					> *
+						flex: auto 0
+
+					#input-quantity
+						height: 100%
+						width: 150px
+
+	.product-image-additional
+		.slick-slide
+			transform: scale(.95)
+			&.slick-current, &:hover 
+				img
+					border: 1px solid $dbrown
+
+	.product-image-main
+		border: 1px solid #ccc
+		margin-bottom: 1px
+
+		.slick-nav
+			// display: block !important
+
+	.btns
+		display: flex
+		flex-wrap: wrap
+		button
+			margin-right: 20px
+			padding-left: 20px
+			padding-right: 20px
+			min-width: 190px !important
+			margin-bottom: 10px
+
+	#waiting_list
+		background: #F9F9F9
+		margin-bottom: 30px
+
+		#waiting_list_submit
+			margin-bottom: 10px
+
+		input
+			background: transparent
+			border: none
+			border-bottom: 1px solid $dbrown
+			margin-bottom: 10px
+
+			&::placeholder
+				color: $dbrown
+				font-weight: 600
+				font-size: 16px
+
+
+	#product-tabs
+		display: flex
+		flex-direction: column
+		border-top: 1px solid #ccc
+		border-bottom: none
+
+		.set
+			border-bottom: 1px solid #ccc
+
+			li
+				padding: 10px 0
+				display: flex
+				justify-content: space-between
+				.a
+					border: none
+					padding-left: 0
+					cursor: pointer
+					text-transform: uppercase
+					color: $dbrown
+					width: 100%
+					&:hover
+						background: transparent
+
+			.tab-pane
+				*
+					color: $grey !important
+			.in
+				position: relative
+				// &::after
+				// 	content: '-'
+				// 	position: absolute
+				// 	right: 0
+				// 	top: -150%
+				// 	bottom: 0
+				// 	display: block
+
+.related_related_products_
+	.related
+		margin-top: calc(50px + (100 - 50) * (100vw - 320px) / (1920 - 320))
+
+.custom4, .custom5, .custom6
+	padding: 0 !important
+
+.category-con
+	display: flex
+	flex-wrap: wrap
+	.inner
+		display: flex
+		flex-direction: column
+
+		h4
+			text-transform: uppercase
+			color: $dbrown
+			padding: calc(8px + (20 - 8) * (100vw - 320px) / (1920 - 320)) 0
+			font-size: calc(16px + (21 - 16) * (100vw - 320px) / (1920 - 320))
+
+		.image
+			position: relative
+
+			img
+				width: 100%
+
+			.overlay
+				position: absolute
+				top: 0
+				bottom: 0
+				right: 0
+				left: 0
+				background: rgba(255,255,255,.9)
+				display: flex
+				align-items: center
+				justify-content: center
+				opacity: 0
+				transition: .3s ease
+
+		&:hover
+			h4
+				color: $lbrown
+
+			.overlay
+				opacity: 1
+
+	@media (min-width: 768px)
+		.inner
+			width: calc((100% / 3) - 30px)
+			margin: 0 15px
+
+	@media (max-width: 768px)
+		.inner
+			// width: calc((100% / 2) - 10px)
+			margin: 0 5px
+
+.featured_by_tab
+	padding: 0 !important
+	> .container
+		padding: 0 !important
+
+		.fcategory_tab
+			padding: 50px 0 70px !important
+
+	.product-gutter
+		width: 94.5%
+		margin: 0 auto
+		.product-details, .sticker
+			display: none
+
+	.tab-content, .nav-pills, .title-nav
+		width: 85%
+		margin: 0 auto
+
+		@media (max-width: 991px)
+			width: 90%
+
+	.nav-pills
+		justify-content: center
+		display: flex
+		margin-bottom: 70px
+
+		li
+			a
+				background: transparent !important
+				color: $dbrown
+				font-size: 20px
+				padding: 0 20px
+
+			&.active, &:hover
+				a
+					color: $lbrown
+
+			&:not(:last-of-type)
+				border-right: 1px solid $dbrown
+
+.album-container
+	display: flex
+	flex-wrap: wrap
+	.inner
+		display: flex
+		flex-direction: column
+		position: relative
+
+		.images
+			position: relative
+			overflow: hidden
+			display: flex
+			align-items: center
+			justify-content: center
+
+			.bg
+				position: absolute
+				width: 100%
+				z-index: -1
+				// opacity: .6
+				filter: blur(9px)
+
+			.overlay
+				position: absolute
+				left: 0
+				right: 0
+				top: 0
+				bottom: 0
+				display: flex
+				align-items: center
+				justify-content: center
+				background: rgba(255, 255, 255, .8)
+				opacity: 0
+				transition: .3s ease
+
+		.description
+			position: relative
+			padding-top: 20px
+			h3
+				text-transform: uppercase
+
+			p
+				color: $grey
+
+		@media (min-width: 1100px)
+			width: calc((100% / 4) - 30px)
+			margin: 15px
+			.images
+				img
+					max-height: 350px
+
+			p
+				display: -webkit-box
+				-webkit-box-orient: vertical
+				-webkit-line-clamp: 3
+				overflow: hidden
+
+		@media (max-width: 1100px) and (min-width: 991px)
+			width: calc((100% / 3) - 20px)
+			margin: 10px
+			.images
+				img
+					max-height: 300px
+
+		@media (max-width: 991px)
+			width: calc((100% / 2) - 20px)
+			margin: 10px
+			.images
+				img
+					max-height: 350px
+
+		@media (max-width: 540px)
+			width: 100%
+			margin: 5px
+			.images
+				img
+					// max-height: 200px
+
+		&:hover
+			.overlay
+				opacity: 1
+
+.gallery-gallery
+	.content
+		margin: 0 auto
+		@media (min-width: 991px)
+			width: 74%
+
+		@media (max-width: 991px)
+			width: 90%
+
+		.inner
+			h3
+				text-transform: uppercase
+				margin: 40px 0 30px
+				font-size: 32px
+
+		.text
+			line-height: 2
+			color: $grey
+
+			p
+				margin-bottom: 20px
+
+.gallery-album
+	#content
+		margin-bottom: 0
+
+	.enquiry-form
+		padding: 50px 0 !important
+		h2
+			margin-top: 0 !important
+
+		h2, form
+			@media (min-width: 991px)
+				width: 62%
+				margin: 0 auto
+
+			@media (max-width: 991px)
+				width: 92%
+				margin: 0 auto
+
+		form
+			select
+				padding: 0 !important
+
+			input[type=text], input[type=tel], select, textarea
+				background: transparent
+				border-color: transparent transparent $dbrown transparent
+				box-shadow: none
+				padding-left: 5px
+				&::placeholder, &.select
+					font-size: 20px !important
+					font-weight: 500
+					color: $dbrown
+					letter-spacing: 1px
+					font-family: $print
+
+			.contact-footer
+				display: flex
+				justify-content: space-between
+				align-items: center
+				margin-top: 20px
+				display: flex
+				align-items: center
+				justify-content: space-between
+				flex-wrap: wrap
+				@media (max-width: 768px)
+					justify-content: center
+					// margin-bottom: 40px
+
+				#google_recaptcha
+					margin-bottom: 0
+
+.common-home
+	.slideshow
+		.slick-slide
+			.hidden-xs
+				width: 100%
+
+	.slideshow1
+		position: fixed
+
+	.slideshow
+		.slider-slideshow-description
+			.slider-slideshow-description-texts
+				@media (min-width: 991px)
+					width: 55%
+
+				@media (max-width: 991px)
+					width: 90%
+
+				@media (max-width: 768px)
+					width: 100%
+
+			&.right
+				.slider-slideshow-description-texts
+					margin-left: 0
+
+			&.left
+				.slider-slideshow-description-texts
+					margin-right: 0
+
+			&.center
+				.slider-slideshow-description-texts
+					margin: 0 auto
+
+			p
+				margin-bottom: 0
+			*:not(.btn)
+				letter-spacing: 4px
+
+			&.background-type-light_image
+				.slider-slideshow-description-texts
+					*:not(.btn)
+						color: #333 !important
+
+					.btn
+						background: $b !important
+
+			&.background-type-dark_image
+				.slider-slideshow-description-texts
+					*:not(.btn)
+						color: $w !important
+
+					.btn
+						background: $w !important
+
+		.slider-dots
+			.owl-dot
+				width: 10.5px
+				height: 10px
+				background: $w
+
+				&.active
+					span
+						background: rgba(255, 255, 255, .5) !important
+
+				span
+					background: transparent !important
+					width: 14.5px
+					height: 14.5px
+					display: block
+					border-radius: 50%
+					margin: 0
+					position: absolute
+					top: 50%
+					transform: translate(-50%, -50%)
+					align-items: center
+					justify-content: center
+					left: 50%
+
+	#content
+		margin-bottom: 0
+
+	.section-space, footer
+		background: $w
+
+	.featured, .news_latest
+		position: relative
+		&.section-space
+			padding: calc(30px + (70 - 30) * (100vw - 320px) / (1920 - 320)) 0 !important
+
+	.featured
+		.product-gutter
+			.product-name
+				a
+					display: -webkit-box
+					-webkit-box-orient: vertical
+					-webkit-line-clamp: 4
+					overflow: hidden
+
+	.news_latest
+		&.section-space
+			padding-top: 0 !important
+
+		h2
+			margin-bottom: calc(20px + (30 - 20) * (100vw - 320px) / (1920 - 320)) !important
+
+			@media (max-width: 991px) and (min-width: 768px)
+				margin-bottom: calc(80px + (150 - 80) * (100vw - 320px) / (1920 - 320)) !important			
+
+		.container
+			padding: 0 !important
+
+		.not-home
+			display: none
+
+		.in-home
+			display: block !important
+
+		.newslatest-home
+			.slick-track
+				display: flex
+
+				.slick-slide
+					padding: 15px
+					display: flex
+					flex-direction: column
+					height: inherit
+
+					&:hover
+						*
+							color: $lbrown
+
+					.img_container
+						@media (min-width: 991px)
+							max-height: 260px
+
+						@media (max-width: 991px)
+							max-height: 180px
+
+						.article-image
+							height: 100% !important
+
+					.name
+						margin-top: 20px
+						margin-bottom: 25px
+						font-size: calc(17px + (22 - 17) * (100vw - 320px) / (1920 - 320))
+
+					.date
+						display: none
+
+					.blog-button
+						display: flex
+						margin-top: auto
+
+					.button
+						border: 1px solid $dbrown
+						padding: 10px 25px
+
+					@media (max-width: 768px)
+						text-align: center
+
+		.home-btn
+			text-align: center
+			margin-top: calc(20px + (50 - 20) * (100vw - 320px) / (1920 - 320))
+
+	.featured
+		position: relative
+		h2
+			margin-bottom: calc(80px + (150 - 80) * (100vw - 320px) / (1920 - 320)) !important
+
+		.sticker
+			// display: none
+
+.slick-nav
+	display: none !important
+
+.title-nav
+	position: relative
+
+	.nav
+		position: absolute
+		top: 0
+		bottom: 0
+		right: 0
+		display: flex
+		align-items: center
+
+		a
+			cursor: pointer
+
+		@media (max-width: 768px)
+			display: none
+
+	@media (min-width: 991px)
+		a
+			margin-left: 20px
+
+	@media (max-width: 991px)
+		display: flex
+		flex-direction: column
+		justify-content: center
+
+		.nav
+			justify-content: center
+			width: 100%
+			margin-top: 30px
+
+			a
+				margin: 0 15px
+
+.instagram
+	padding-top: 0 !important
+	background: $w
+	position: relative
+	h2
+		margin-top: 0 !important
+
+	.module-instagram
+		margin: 0 auto
+		@media (min-width: 991px)
+			width: 93%
+
+		@media (max-width: 991px)
+			width: 90%
+
+		.instagram
+			display: flex
+			flex-wrap: wrap
+
+			.item
+				i
+					position: absolute
+					bottom: 0
+					top: 0
+					right: 0
+					left: 0
+
+				.txt
+					position: absolute
+					bottom: 25%
+					right: 0
+					left: 0
+					color: $w
+					display: flex
+					align-items: center
+					justify-content: center
+					font-size: 16px
+					opacity: 0
+
+				&:hover
+					i
+						background: rgba(0,0,0,.6)
+
+					.txt
+						opacity: 1
+
+				@media (min-width: 991px)
+					width: calc(100% / 6)
+
+				@media (max-width: 991px)
+					width: calc(100% / 3)
+					padding: 5px
+
+				@media (max-width: 768px)
+					.txt
+						display: none
+
+.custom7
+	padding: 0
+	position: relative
+
+	.title-text
+		text-align: center
+
+		p
+			color: $grey
+			margin: 0 auto 20px
+			line-height: 2em
+			font-weight: 600
+			@media (min-width: 768px)
+				width: 75%
+
+	.homepage-ui-inner
+		padding-bottom: 10px
+
+		.inner
+			display: flex
+			justify-content: space-between
+			align-items: center
+			margin-bottom: calc(40px + (100 - 40) * (100vw - 320px) / (1920 - 320))
+			overflow: hidden
+			&:last-of-type
+				margin-bottom: 0
+
+			@media (min-width: 991px)
+				&.odd
+					.inner-texts
+						margin-left: auto
+
+				&.even
+					.images
+						order: 2
+
+					.text
+							order: 1
+				.images
+					width: 55%
+
+				.text
+					width: 43%
+					.inner-texts
+						max-width: 90%
+
+						.p
+							display: -webkit-box
+							-webkit-line-clamp: 4
+							-webkit-box-orient: vertical
+							overflow: auto
+
+			@media (max-width: 991px) and (min-width: 768px)
+				flex-direction: column
+
+				.images, .text
+					width: 90%
+					img
+						margin: 0 auto 20px
+
+			@media (max-width: 768px)
+				flex-direction: column
+				.images, .text
+					width: 90%
+					img
+						margin: 0 auto 20px
+
+			.images
+				img
+					width: 100%
+
+			.text
+				height: 75%
+				overflow: auto
+				margin: auto 0
+				display: flex
+				flex-direction: column
+				justify-content: center
+				padding-bottom: 1px
+
+				.inner-texts
+					.a
+						// max-width: 46%
+						a
+							min-width: 220px !important
+
+					.p
+						margin-bottom: 30px
+
+					h3
+						font-size: calc(30px + (55 - 30) * (100vw - 320px) / (1920 - 320))
+						font-weight: 500
+						margin-bottom: 30px
+						text-transform: uppercase
+
+					p
+						line-height: 1.8
+						margin-bottom: 15px
+						color: $grey
+						font-weight: 500
+
+.custom8
+	padding-top: 0 !important
+	position: relative
+
+	.memberships-con
+		h2
+			margin-bottom: calc(30px + (75 - 30) * (100vw - 320px) / (1920 - 320)) !important
+
+		.memberships
+			.membership-inner
+				img
+					max-width: 250px
+					margin: 0 auto
+
+.acount-reg-footer
+	display: flex
+	justify-content: space-between
+	align-items: center
+
+	@media (min-width: 768px)
+		#google_recaptcha
+			margin-bottom: 0
+			margin-left: 0
+
+	@media (max-width: 768px)
+		flex-direction: column
+
+		#google_recaptcha
+			margin-bottom: 10px !important
+					
+.testimonial-testimonial
+	.modal
+		padding: 0 !important
+		overflow: hidden
+
+		.modal-dialog
+			width: 100%
+			margin: 0
+			height: 100vh
+
+			.modal-content
+				height: 100%
+
+				.modal-body
+					margin: auto
+					height: 95vh
+
+					.time-date
+						display: flex
+						position: relative
+						flex-direction: column
+						margin-right: 0
+						margin-left: 0
+
+						.inner-form
+							border-bottom: 1px solid #818181
+							width: 100%
+							display: flex
+							position: relative
+
+							input
+								border: none !important
+
+							*
+								cursor: pointer !important
+
+							.erase-data
+								position: absolute
+								top: 0
+								bottom: 0
+								right: 30px
+								z-index: 1
+								display: flex
+								align-items: center
+								font-size: 30px
+								color: red
+								cursor: pointer
+
+							.time-date-icon
+								position: absolute
+								right: 0
+								bottom: 4px
+
+								.fa-calendar
+									font-size: 16px
+
+							#input-date_of_purchase
+								position: absolute
+								border-left: none
+								cursor: pointer
+								right: 0
+								height: 100%
+								width: 45px
+								font-size: 25px
+
+							#input-date_of_purchase2
+								border-right: none
+
+							.og-btn
+								opacity: 0
+								z-index: 1
+
+					@media (min-width: 991px)
+						width: 45%
+
+					@media (max-width: 991px)
+						width: 85%
+
+					@media (min-width: 768px)
+						display: flex
+						flex-direction: column
+						justify-content: center
+						#google_recaptcha
+							#input-payment-captcha
+								transform-origin: center
+
+						.contact-footer
+							display: flex
+							flex-wrap: wrap
+							flex-direction: column
+							align-items: center
+							justify-content: center
+
+					@media (max-width: 768px)
+						#google_recaptcha
+							#input-payment-captcha
+								transform-origin: left center
+
+						.contact-footer
+							.buttons
+								text-align: center
+
+					textarea, input[type=text], input[type=date]
+						border-color: transparent transparent $dbrown transparent
+						background: transparent
+						box-shadow: none
+						padding-left: 5px
+						&::placeholder
+							font-size: 16px !important
+							font-weight: 500
+							color: $dbrown
+							letter-spacing: 1px
+							font-family: $print
+
+				.modal-header
+					border: none !important
+					padding: 0 !important
+
+					button
+						opacity: 1
+						font-size: 45px
+						font-weight: 100
+						width: 100px
+						text-align: right
+						position: absolute
+						right: 0
+						// height: 50px
+						padding-right: 20px
+						padding-top: 10px
+
+				.contact-footer
+					@media (max-width: 768px)
+						display: flex
+						justify-content: center
+						align-items: center
+						flex-direction: column
+
+						#google_recaptcha
+							margin-bottom: 0
+
+							#input-payment-captcha
+								transform-origin: center
+
+.searchBox
+	position: relative	
+	.searchFunction
+		border-radius: 0
+		box-shadow: 0 0 15px $dbrown
+		*
+			font-size: 12px
+			text-transform: uppercase
+			color: $dbrown
+			font-weight: 600
+
+		@media (min-width: 768px)
+			width: 230px
+
+		.searchInput
+			background: transparent
+			height: 35px
+			align-items: center
+			border-bottom: 1px solid $dbrown
+
+			input
+				padding-left: 10px
+				text-transform: none
+				font-weight: 500
+
+				&::placeholder
+					font-weight: 500
+					text-transform: none
+					font-style: italic
+
+		.searchResults
+			h4
+				font-size: 14px
+
+#footer-area
+	box-shadow: 0 -30px 0px $w
+
